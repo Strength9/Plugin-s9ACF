@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Strength9 Data Prep Plugin
+Plugin Name: Strength 9 Data Prep Plugin
 Description: This plugin will prepare and clean the data for the website
 Author: Dave Pratt
 Version: 1.0
