@@ -10,8 +10,13 @@ Author URI: http://www.strength9.co.uk
 // Exit if accessed directly    
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-function s9_cas_textfield($field, $post_id = false, $escape_method = "wp_kses_post") {
-    $field = get_field($field, $post_id, true);
+function s9_cas_textfield($type, $field, $post_id = false, $escape_method = "wp_kses_post") {
+    
+    
+    if ($type != 'single') {
+        $field = get_field($field, $post_id, true); 
+    };
+    
     
     if($field === NULL || $field === FALSE) $field = '';
     if(is_array($field))
